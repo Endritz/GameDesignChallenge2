@@ -9,7 +9,7 @@
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 678806989918654
+			"sid": 123457538434702
 		},
 		{
 			"eventType": "variable",
@@ -19,7 +19,7 @@
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 116848843900325
+			"sid": 680499532929212
 		},
 		{
 			"eventType": "block",
@@ -27,7 +27,7 @@
 				{
 					"id": "compare-y",
 					"objectClass": "Player",
-					"sid": 263705152138636,
+					"sid": 207501802061130,
 					"parameters": {
 						"comparison": 2,
 						"y-co-ordinate": "MinScrollY"
@@ -38,14 +38,14 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 508894691327242,
+					"sid": 778414031808672,
 					"parameters": {
 						"variable": "MinScrollY",
 						"value": "Player.Y"
 					}
 				}
 			],
-			"sid": 390421133307603,
+			"sid": 735051112556438,
 			"children": [
 				{
 					"eventType": "block",
@@ -53,7 +53,7 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 785284199865847,
+							"sid": 302030592351373,
 							"parameters": {
 								"first-value": "NextPlatform",
 								"comparison": 5,
@@ -65,7 +65,7 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 251765929621339,
+							"sid": 186093175070966,
 							"parameters": {
 								"object-to-create": "Platform",
 								"layer": "\"Game\"",
@@ -77,14 +77,14 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 458055024474007,
+							"sid": 354083576951371,
 							"parameters": {
 								"variable": "NextPlatform",
 								"value": "ViewportTop(\"Game\") - random(15, 50)"
 							}
 						}
 					],
-					"sid": 678929182785404
+					"sid": 955757727061695
 				}
 			]
 		},
@@ -94,21 +94,21 @@
 				{
 					"id": "every-tick",
 					"objectClass": "System",
-					"sid": 624210194680221
+					"sid": 182661199985989
 				}
 			],
 			"actions": [
 				{
 					"id": "scroll-to-position",
 					"objectClass": "System",
-					"sid": 976190114032847,
+					"sid": 670203638872884,
 					"parameters": {
 						"x": "460",
 						"y": "MinScrollY"
 					}
 				}
 			],
-			"sid": 551761736680498
+			"sid": 760414260988647
 		},
 		{
 			"eventType": "block",
@@ -116,12 +116,12 @@
 				{
 					"id": "is-on-screen",
 					"objectClass": "Platform",
-					"sid": 947948735349216
+					"sid": 688950908379439
 				},
 				{
 					"id": "compare-y",
 					"objectClass": "Platform",
-					"sid": 627058537752919,
+					"sid": 775646485137163,
 					"parameters": {
 						"comparison": 4,
 						"y-co-ordinate": "ViewportBottom(\"Game\")"
@@ -132,10 +132,10 @@
 				{
 					"id": "destroy",
 					"objectClass": "Platform",
-					"sid": 193512026652170
+					"sid": 277910130966522
 				}
 			],
-			"sid": 522968447321055
+			"sid": 830281464409767
 		},
 		{
 			"eventType": "block",
@@ -143,12 +143,12 @@
 				{
 					"id": "is-on-screen",
 					"objectClass": "Player",
-					"sid": 475529808181685
+					"sid": 767125241552943
 				},
 				{
 					"id": "compare-y",
 					"objectClass": "Player",
-					"sid": 353865298321708,
+					"sid": 392981836032862,
 					"parameters": {
 						"comparison": 4,
 						"y-co-ordinate": "ViewportBottom(\"Game\")"
@@ -159,54 +159,26 @@
 				{
 					"id": "reset-global-variables",
 					"objectClass": "System",
-					"sid": 644876217929938
+					"sid": 145684778837554
 				},
 				{
 					"id": "restart-layout",
 					"objectClass": "System",
-					"sid": 121931621447240
+					"sid": 406209700864328
 				},
 				{
 					"id": "destroy",
 					"objectClass": "Player",
-					"sid": 142816888515088,
-					"disabled": true
+					"sid": 945517757891767
 				}
 			],
-			"sid": 459588174562795
+			"sid": 454888809506707
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 761269791833093,
-					"parameters": {
-						"key": 39
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Player",
-					"sid": 251968804953865,
-					"parameters": {
-						"animation": "\"Right\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-mirrored",
-					"objectClass": "Player",
-					"sid": 692521484810859,
-					"parameters": {
-						"state": "not-mirrored"
-					}
-				}
-			],
-			"sid": 980844568698695
+			"conditions": [],
+			"actions": [],
+			"sid": 213774979601973
 		},
 		{
 			"eventType": "block",
@@ -214,59 +186,21 @@
 				{
 					"id": "else",
 					"objectClass": "System",
-					"sid": 213329606758617
-				},
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 523604577744304,
-					"parameters": {
-						"key": 37
-					}
+					"sid": 767143362501530
 				}
 			],
 			"actions": [
 				{
 					"id": "set-animation",
 					"objectClass": "Player",
-					"sid": 741006349231853,
-					"parameters": {
-						"animation": "\"Right\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-mirrored",
-					"objectClass": "Player",
-					"sid": 926311821748145,
-					"parameters": {
-						"state": "mirrored"
-					}
-				}
-			],
-			"sid": 135752387049790
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "else",
-					"objectClass": "System",
-					"sid": 768075034810576
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Player",
-					"sid": 730952312123283,
+					"sid": 871132926551082,
 					"parameters": {
 						"animation": "\"Idle\"",
 						"from": "beginning"
 					}
 				}
 			],
-			"sid": 479824246827773
+			"sid": 442150688024713
 		},
 		{
 			"eventType": "block",
@@ -274,21 +208,21 @@
 				{
 					"id": "on-destroyed",
 					"objectClass": "Player",
-					"sid": 267332720014746
+					"sid": 847707475785624
 				}
 			],
 			"actions": [
 				{
 					"id": "open-url-in-new-window",
 					"objectClass": "Browser",
-					"sid": 993356238964073,
+					"sid": 348855354643735,
 					"parameters": {
 						"url": "\"https://raidshadowlegends.com/\"",
 						"tag": "\"NewWindow\""
 					}
 				}
 			],
-			"sid": 996095586044276
+			"sid": 515606917495726
 		},
 		{
 			"eventType": "block",
@@ -296,7 +230,7 @@
 				{
 					"id": "key-is-down",
 					"objectClass": "Keyboard",
-					"sid": 196976289257205,
+					"sid": 368077521195011,
 					"parameters": {
 						"key": 85
 					}
@@ -306,14 +240,14 @@
 				{
 					"id": "simulate-control",
 					"objectClass": "Player",
-					"sid": 306688864747006,
+					"sid": 341611423055937,
 					"behaviorType": "Platform",
 					"parameters": {
 						"control": "jump"
 					}
 				}
 			],
-			"sid": 960882617246560
+			"sid": 180463638289400
 		},
 		{
 			"eventType": "block",
@@ -321,7 +255,7 @@
 				{
 					"id": "key-is-down",
 					"objectClass": "Keyboard",
-					"sid": 687313069090542,
+					"sid": 950781301663822,
 					"parameters": {
 						"key": 70
 					}
@@ -331,14 +265,31 @@
 				{
 					"id": "simulate-control",
 					"objectClass": "Player",
-					"sid": 662066065614768,
+					"sid": 150419398517242,
 					"behaviorType": "Platform",
 					"parameters": {
 						"control": "right"
 					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 641674812164029,
+					"parameters": {
+						"animation": "\"Right\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 483017025651006,
+					"parameters": {
+						"state": "not-mirrored"
+					}
 				}
 			],
-			"sid": 637888620476401
+			"sid": 376285290311673
 		},
 		{
 			"eventType": "block",
@@ -346,7 +297,7 @@
 				{
 					"id": "key-is-down",
 					"objectClass": "Keyboard",
-					"sid": 765208744760973,
+					"sid": 577728595843373,
 					"parameters": {
 						"key": 67
 					}
@@ -356,14 +307,31 @@
 				{
 					"id": "simulate-control",
 					"objectClass": "Player",
-					"sid": 737978352529636,
+					"sid": 856793456608242,
 					"behaviorType": "Platform",
 					"parameters": {
 						"control": "left"
 					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 872285386354083,
+					"parameters": {
+						"animation": "\"Right\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 622016301700600,
+					"parameters": {
+						"state": "mirrored"
+					}
 				}
 			],
-			"sid": 754593538825359
+			"sid": 975125505923863
 		}
 	],
 	"sid": 795276943272977

@@ -115,6 +115,14 @@
 						"url": "\"https://raidshadowlegends.com/\"",
 						"tag": "\"NewWindow\""
 					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 249422733842321,
+					"parameters": {
+						"layout": "Tutorial2"
+					}
 				}
 			],
 			"sid": 574677186215174
