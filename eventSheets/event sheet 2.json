@@ -169,82 +169,16 @@
 				{
 					"id": "destroy",
 					"objectClass": "Player",
-					"sid": 945517757891767,
-					"disabled": true
+					"sid": 945517757891767
 				}
 			],
 			"sid": 454888809506707
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 604765486358561,
-					"parameters": {
-						"key": 39
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Player",
-					"sid": 513593041637386,
-					"parameters": {
-						"animation": "\"Right\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-mirrored",
-					"objectClass": "Player",
-					"sid": 624810566533016,
-					"parameters": {
-						"state": "not-mirrored"
-					}
-				}
-			],
+			"conditions": [],
+			"actions": [],
 			"sid": 213774979601973
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "else",
-					"objectClass": "System",
-					"sid": 363373229898329
-				},
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 961346389115772,
-					"parameters": {
-						"key": 37
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Player",
-					"sid": 264442364851915,
-					"parameters": {
-						"animation": "\"Right\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-mirrored",
-					"objectClass": "Player",
-					"sid": 136830504412899,
-					"parameters": {
-						"state": "mirrored"
-					}
-				}
-			],
-			"sid": 720446197449618
 		},
 		{
 			"eventType": "block",
@@ -336,6 +270,23 @@
 					"parameters": {
 						"control": "right"
 					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 641674812164029,
+					"parameters": {
+						"animation": "\"Right\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 483017025651006,
+					"parameters": {
+						"state": "not-mirrored"
+					}
 				}
 			],
 			"sid": 376285290311673
@@ -360,6 +311,23 @@
 					"behaviorType": "Platform",
 					"parameters": {
 						"control": "left"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 872285386354083,
+					"parameters": {
+						"animation": "\"Right\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 622016301700600,
+					"parameters": {
+						"state": "mirrored"
 					}
 				}
 			],
