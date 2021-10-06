@@ -1,14 +1,14 @@
 {
 	"name": "Platform",
 	"plugin-id": "Sprite",
-	"sid": 535149781712763,
+	"sid": 716128246163212,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "jumpthru",
 			"name": "Jumpthru",
-			"sid": 988817527831364
+			"sid": 191953915027436
 		}
 	],
 	"effectTypes": [],
@@ -24,7 +24,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8152979,
+						"imageSpriteId": 2457549,
 						"collisionPoly": {
 							"points": [
 								0.0487805,
@@ -49,7 +49,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 749961788417589,
+				"sid": 637443636843185,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

@@ -53,6 +53,14 @@
 			"author": "Scirra",
 			"version": "r260",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "jumpthru",
+			"name": "Jump-thru",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
 		}
 	],
 	"uniqueId": "g40ihkygl7z",
@@ -68,7 +76,8 @@
 			"Sprite3",
 			"End",
 			"Keyboard",
-			"Browser"
+			"Browser",
+			"Platform"
 		],
 		"subfolders": []
 	},
