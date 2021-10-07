@@ -39,6 +39,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
@@ -88,7 +96,9 @@
 			"Platform",
 			"Spikes",
 			"Flag",
-			"Victory"
+			"Victory",
+			"TiledBackground",
+			"Sprite"
 		],
 		"subfolders": []
 	},
@@ -102,7 +112,8 @@
 		"items": [
 			"Tutorial",
 			"Tutorial2",
-			"Tutorial3"
+			"Tutorial3",
+			"Tutorial4"
 		],
 		"subfolders": []
 	},
