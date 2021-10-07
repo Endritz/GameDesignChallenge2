@@ -1,0 +1,69 @@
+{
+	"name": "Tut2 Event Sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Spikes",
+					"sid": 965413473299171,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 277990354422557,
+					"parameters": {
+						"layout": "Tutorial3"
+					}
+				}
+			],
+			"sid": 922142667702741
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Flag",
+					"sid": 838640735978324,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Player",
+					"sid": 767140383807408
+				}
+			],
+			"sid": 975028958570396
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "Player",
+					"sid": 834431819510997
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 217000723615963
+				}
+			],
+			"sid": 747940740289552
+		}
+	],
+	"sid": 707255865843040
+}

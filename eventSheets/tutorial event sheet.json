@@ -1,5 +1,5 @@
 {
-	"name": "Event sheet 1",
+	"name": "Tutorial Event Sheet",
 	"events": [
 		{
 			"eventType": "block",
@@ -119,13 +119,25 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 249422733842321,
+					"sid": 910693299697429,
 					"parameters": {
 						"layout": "Tutorial2"
 					}
 				}
 			],
 			"sid": 574677186215174
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "collisions-enabled",
+					"objectClass": "BackgroundSky",
+					"sid": 957909574816080
+				}
+			],
+			"actions": [],
+			"sid": 691469086594627
 		}
 	],
 	"sid": 482237297620431

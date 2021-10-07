@@ -88,7 +88,8 @@
 			"Platform",
 			"Spikes",
 			"Flag",
-			"Victory"
+			"Victory",
+			"death"
 		],
 		"subfolders": []
 	},
@@ -103,15 +104,16 @@
 			"Tutorial",
 			"Tutorial2",
 			"Tutorial3",
-			"Tutorial4"
+			"Infinite Mode"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1",
-			"Event sheet 2",
-			"Event sheet 3"
+			"Tutorial Event Sheet",
+			"Inf Event Sheet",
+			"Tut2 Event Sheet",
+			"Tut3 Event sheet"
 		],
 		"subfolders": []
 	},

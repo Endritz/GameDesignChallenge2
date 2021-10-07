@@ -1,5 +1,5 @@
 {
-	"name": "Event sheet 3",
+	"name": "Tut3 Event sheet",
 	"events": [
 		{
 			"eventType": "block",
@@ -7,31 +7,7 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "Spikes",
-					"sid": 965413473299171,
-					"parameters": {
-						"object": "Player"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-text",
-					"objectClass": "Victory",
-					"sid": 365384266993163,
-					"parameters": {
-						"text": "\"Victory\""
-					}
-				}
-			],
-			"sid": 922142667702741
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Flag",
-					"sid": 838640735978324,
+					"sid": 996586209600204,
 					"parameters": {
 						"object": "Player"
 					}
@@ -41,10 +17,39 @@
 				{
 					"id": "destroy",
 					"objectClass": "Player",
-					"sid": 767140383807408
+					"sid": 729081373824122
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 999973253170416
 				}
 			],
-			"sid": 975028958570396
+			"sid": 849023800788032
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Flag",
+					"sid": 798301846421452,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 908435813863807,
+					"parameters": {
+						"layout": "Infinite Mode"
+					}
+				}
+			],
+			"sid": 905608221385464
 		},
 		{
 			"eventType": "block",
@@ -52,18 +57,13 @@
 				{
 					"id": "on-destroyed",
 					"objectClass": "Player",
-					"sid": 834431819510997
+					"sid": 290352870536798
 				}
 			],
-			"actions": [
-				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 217000723615963
-				}
-			],
-			"sid": 747940740289552
+			"actions": [],
+			"sid": 608837116719458,
+			"disabled": true
 		}
 	],
-	"sid": 707255865843040
+	"sid": 581453884883433
 }
