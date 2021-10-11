@@ -3,6 +3,16 @@
 	"events": [
 		{
 			"eventType": "variable",
+			"name": "Points",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 184717615018247
+		},
+		{
+			"eventType": "variable",
 			"name": "MinScrollY",
 			"type": "number",
 			"initialValue": "999",
@@ -170,6 +180,15 @@
 					"id": "destroy",
 					"objectClass": "Player",
 					"sid": 945517757891767
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 892898000296084,
+					"parameters": {
+						"variable": "Points",
+						"value": "0"
+					}
 				}
 			],
 			"sid": 454888809506707
@@ -244,6 +263,25 @@
 					"behaviorType": "Platform",
 					"parameters": {
 						"control": "jump"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 885466114129204,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 719528217439329,
+					"parameters": {
+						"audio-file": "jump",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -332,6 +370,32 @@
 				}
 			],
 			"sid": 975125505923863
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 335654170450759
+				},
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 735114664668395
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "HUD",
+					"sid": 912214335191236,
+					"parameters": {
+						"text": "\"Points \" & Points"
+					}
+				}
+			],
+			"sid": 861019170773878
 		}
 	],
 	"sid": 795276943272977
