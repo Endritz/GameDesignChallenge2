@@ -1,5 +1,5 @@
 {
-	"name": "Tutorial2",
+	"name": "Spikes1",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -994,5 +994,5 @@
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,
-	"eventSheet": "Tut2 Event Sheet"
+	"eventSheet": "Spikes Event Sheet"
 }

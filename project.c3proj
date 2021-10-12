@@ -99,7 +99,8 @@
 			"Victory",
 			"death",
 			"HUD",
-			"Audio"
+			"Audio",
+			"Coin"
 		],
 		"subfolders": []
 	},
@@ -112,9 +113,10 @@
 	"layouts": {
 		"items": [
 			"Tutorial",
-			"Tutorial2",
+			"Spikes1",
 			"Tutorial3",
-			"Infinite Mode"
+			"Infinite Mode",
+			"Spikes2"
 		],
 		"subfolders": []
 	},
@@ -122,8 +124,9 @@
 		"items": [
 			"Tutorial Event Sheet",
 			"Inf Event Sheet",
-			"Tut2 Event Sheet",
-			"Tut3 Event sheet"
+			"Spikes Event Sheet",
+			"Tut3 Event sheet",
+			"Spikes2 Event Sheet"
 		],
 		"subfolders": []
 	},

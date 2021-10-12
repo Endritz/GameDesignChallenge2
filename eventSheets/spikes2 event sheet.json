@@ -1,0 +1,82 @@
+{
+	"name": "Spikes2 Event Sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Spikes",
+					"sid": 319766378648766,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Player",
+					"sid": 155967944084480
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 577399572619870
+				}
+			],
+			"sid": 608753670690890
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Coin",
+					"sid": 356832501441623,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Player",
+					"sid": 426662275064124
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 356614861187362
+				}
+			],
+			"sid": 198035855065945
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 595403100137588,
+					"parameters": {
+						"object": "End"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 819801911313880,
+					"parameters": {
+						"layout": "Tutorial3"
+					}
+				}
+			],
+			"sid": 282834851521277
+		}
+	],
+	"sid": 546846744304387
+}

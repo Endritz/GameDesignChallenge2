@@ -1,5 +1,5 @@
 {
-	"name": "Tut2 Event Sheet",
+	"name": "Spikes Event Sheet",
 	"events": [
 		{
 			"eventType": "block",
@@ -17,9 +17,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 277990354422557,
+					"sid": 690735079707995,
 					"parameters": {
-						"layout": "Tutorial3"
+						"layout": "Spikes2"
 					}
 				}
 			],
@@ -42,27 +42,14 @@
 					"id": "destroy",
 					"objectClass": "Player",
 					"sid": 767140383807408
-				}
-			],
-			"sid": 975028958570396
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-destroyed",
-					"objectClass": "Player",
-					"sid": 834431819510997
-				}
-			],
-			"actions": [
+				},
 				{
 					"id": "restart-layout",
 					"objectClass": "System",
-					"sid": 217000723615963
+					"sid": 262205735397264
 				}
 			],
-			"sid": 747940740289552
+			"sid": 975028958570396
 		}
 	],
 	"sid": 707255865843040
