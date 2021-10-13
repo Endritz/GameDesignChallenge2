@@ -3,6 +3,16 @@
 	"events": [
 		{
 			"eventType": "variable",
+			"name": "DeathCount",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 158597794841557
+		},
+		{
+			"eventType": "variable",
 			"name": "Points",
 			"type": "number",
 			"initialValue": "0",
@@ -182,6 +192,15 @@
 					"sid": 945517757891767
 				},
 				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 790206470928033,
+					"parameters": {
+						"variable": "DeathCount",
+						"value": "1"
+					}
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 892898000296084,
@@ -268,9 +287,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 885466114129204,
+					"sid": 287925781829426,
 					"parameters": {
-						"seconds": "2"
+						"seconds": "1.5"
 					}
 				},
 				{
@@ -282,6 +301,15 @@
 						"loop": "not-looping",
 						"volume": "0",
 						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 691809884591249,
+					"parameters": {
+						"variable": "Points",
+						"value": "Player.Y"
 					}
 				}
 			],
@@ -378,24 +406,67 @@
 					"id": "on-start-of-layout",
 					"objectClass": "System",
 					"sid": 335654170450759
-				},
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 735114664668395
 				}
 			],
 			"actions": [
 				{
-					"id": "set-text",
-					"objectClass": "HUD",
-					"sid": 912214335191236,
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 342659464970400,
 					"parameters": {
-						"text": "\"Points \" & Points"
+						"variable": "Points",
+						"value": "0"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 425766110022768
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 227414841482379,
+					"parameters": {
+						"audio-file": "BG Music",
+						"loop": "not-looping",
+						"volume": "(DeathCount*5)",
+						"tag-optional": "\"\""
 					}
 				}
 			],
-			"sid": 861019170773878
+			"sid": 861019170773878,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 790526275158568,
+							"parameters": {
+								"variable": "DeathCount",
+								"comparison": 5,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 966183790437272,
+							"parameters": {
+								"audio-file": "Wilhelm",
+								"loop": "not-looping",
+								"volume": "5",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 760089928714438
+				}
+			]
 		}
 	],
 	"sid": 795276943272977
