@@ -2,6 +2,16 @@
 	"name": "Tut3 Event sheet",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "DeathCount4",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 437818089203779
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -18,6 +28,17 @@
 					"id": "destroy",
 					"objectClass": "Player",
 					"sid": 729081373824122
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 834817017208884,
+					"parameters": {
+						"audio-file": "Wilhelm",
+						"loop": "not-looping",
+						"volume": "5",
+						"tag-optional": "\"\""
+					}
 				},
 				{
 					"id": "restart-layout",

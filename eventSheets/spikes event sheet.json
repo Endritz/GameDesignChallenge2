@@ -2,6 +2,16 @@
 	"name": "Spikes Event Sheet",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "DeathCount3",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 830707887682376
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -42,6 +52,17 @@
 					"id": "destroy",
 					"objectClass": "Player",
 					"sid": 767140383807408
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 679066463687167,
+					"parameters": {
+						"audio-file": "Wilhelm",
+						"loop": "not-looping",
+						"volume": "5",
+						"tag-optional": "\"\""
+					}
 				},
 				{
 					"id": "restart-layout",

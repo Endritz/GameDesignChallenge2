@@ -21,9 +21,85 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 946132087153315,
+					"parameters": {
+						"seconds": "10"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Taunt",
+					"sid": 477184439343350,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 714547839387633,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Taunt2",
+					"sid": 241165113501575,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 121523392713915,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Taunt3",
+					"sid": 167218049678434,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
-			"sid": 414679716042582
+			"sid": 414679716042582,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 286165374332068,
+							"parameters": {
+								"variable": "Winner",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Taunt4",
+							"sid": 366882805325958,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 678375654026730
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -48,6 +124,35 @@
 				}
 			],
 			"sid": 110916014467340
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 912087947628355
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 972216193053140,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SpaceText",
+					"sid": 690099820303684,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 170426780167907
 		}
 	],
 	"sid": 154254679821178

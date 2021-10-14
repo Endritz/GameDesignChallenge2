@@ -3,6 +3,26 @@
 	"events": [
 		{
 			"eventType": "variable",
+			"name": "Winner",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 354273625874625
+		},
+		{
+			"eventType": "variable",
+			"name": "JumpCount",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 365346789990797
+		},
+		{
+			"eventType": "variable",
 			"name": "DeathCount",
 			"type": "number",
 			"initialValue": "0",
@@ -267,6 +287,17 @@
 						"url": "\"https://raidshadowlegends.com/\"",
 						"tag": "\"NewWindow\""
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 353878327684353,
+					"parameters": {
+						"audio-file": "Wilhelm",
+						"loop": "not-looping",
+						"volume": "5",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 515606917495726
@@ -275,9 +306,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "key-is-down",
+					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-					"sid": 368077521195011,
+					"sid": 854097250431656,
 					"parameters": {
 						"key": 85
 					}
@@ -294,6 +325,15 @@
 					}
 				},
 				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 168438262226015,
+					"parameters": {
+						"variable": "JumpCount",
+						"value": "1"
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 287925781829426,
@@ -304,11 +344,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 719528217439329,
+					"sid": 198115064955617,
 					"parameters": {
 						"audio-file": "jump",
 						"loop": "not-looping",
-						"volume": "0",
+						"volume": "JumpCount",
 						"tag-optional": "\"\""
 					}
 				},
@@ -471,38 +511,7 @@
 					}
 				}
 			],
-			"sid": 861019170773878,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 790526275158568,
-							"parameters": {
-								"variable": "DeathCount",
-								"comparison": 5,
-								"value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 966183790437272,
-							"parameters": {
-								"audio-file": "Wilhelm",
-								"loop": "not-looping",
-								"volume": "5",
-								"tag-optional": "\"\""
-							}
-						}
-					],
-					"sid": 760089928714438
-				}
-			]
+			"sid": 861019170773878
 		},
 		{
 			"eventType": "block",
@@ -510,10 +519,10 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 983946442241090,
+					"sid": 846327214326777,
 					"parameters": {
 						"variable": "Points",
-						"comparison": 0,
+						"comparison": 5,
 						"value": "500"
 					}
 				}
@@ -525,6 +534,15 @@
 					"sid": 621855194283586,
 					"parameters": {
 						"seconds": "10"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 953283893562780,
+					"parameters": {
+						"variable": "Winner",
+						"value": "1"
 					}
 				},
 				{

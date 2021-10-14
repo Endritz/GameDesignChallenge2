@@ -46,6 +46,17 @@
 					"sid": 426662275064124
 				},
 				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 125679757295083,
+					"parameters": {
+						"audio-file": "Wilhelm",
+						"loop": "not-looping",
+						"volume": "5",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "restart-layout",
 					"objectClass": "System",
 					"sid": 356614861187362
