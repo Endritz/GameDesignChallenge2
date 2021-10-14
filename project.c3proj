@@ -113,7 +113,11 @@
 			"Sprite",
 			"LoadingScreen",
 			"SpaceText",
-			"Wall"
+			"Wall",
+			"Taunt",
+			"Taunt2",
+			"Taunt3",
+			"Taunt4"
 		],
 		"subfolders": []
 	},
@@ -307,5 +311,5 @@
 	},
 	"viewportWidth": 854,
 	"viewportHeight": 480,
-	"firstLayout": null
+	"firstLayout": "Title Page"
 }

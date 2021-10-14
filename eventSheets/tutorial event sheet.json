@@ -2,6 +2,16 @@
 	"name": "Tutorial Event Sheet",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "DeathCount2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 326080468744387
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -131,13 +141,25 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "collisions-enabled",
-					"objectClass": "BackgroundSky",
-					"sid": 957909574816080
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 650713618768119
 				}
 			],
-			"actions": [],
-			"sid": 691469086594627
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 707075093404957,
+					"parameters": {
+						"audio-file": "BG Music",
+						"loop": "not-looping",
+						"volume": "DeathCount + 10",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 122697487796253
 		}
 	],
 	"sid": 482237297620431
