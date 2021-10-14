@@ -91,9 +91,9 @@
 				{
 					"id": "key-is-down",
 					"objectClass": "Keyboard",
-					"sid": 574176123674673,
+					"sid": 216262180571120,
 					"parameters": {
-						"key": 87
+						"key": 84
 					}
 				}
 			],
@@ -116,9 +116,9 @@
 				{
 					"id": "key-is-down",
 					"objectClass": "Keyboard",
-					"sid": 402555579584543,
+					"sid": 863366911727600,
 					"parameters": {
-						"key": 68
+						"key": 70
 					}
 				}
 			],
@@ -158,9 +158,9 @@
 				{
 					"id": "key-is-down",
 					"objectClass": "Keyboard",
-					"sid": 317671728517768,
+					"sid": 836060615657813,
 					"parameters": {
-						"key": 65
+						"key": 72
 					}
 				}
 			],

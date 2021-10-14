@@ -15,99 +15,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 526021155823538,
-					"parameters": {
-						"key": 39
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Player",
-					"sid": 898175844907174,
-					"parameters": {
-						"animation": "\"Right\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-mirrored",
-					"objectClass": "Player",
-					"sid": 250789979810004,
-					"parameters": {
-						"state": "not-mirrored"
-					}
-				}
-			],
-			"sid": 828140257244467
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "else",
-					"objectClass": "System",
-					"sid": 228217606539525
-				},
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 580279357140400,
-					"parameters": {
-						"key": 37
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Player",
-					"sid": 824048594547431,
-					"parameters": {
-						"animation": "\"Right\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-mirrored",
-					"objectClass": "Player",
-					"sid": 153674966555577,
-					"parameters": {
-						"state": "mirrored"
-					}
-				}
-			],
-			"sid": 142289825156766
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "else",
-					"objectClass": "System",
-					"sid": 751787908352231
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Player",
-					"sid": 821842743135643,
-					"parameters": {
-						"animation": "\"Idle\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 408241518359208
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "Player",
 					"sid": 183759513602004,
@@ -160,6 +67,134 @@
 				}
 			],
 			"sid": 122697487796253
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 116967780344582,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Player",
+					"sid": 832635897217662,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "jump"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 568990014222102,
+					"parameters": {
+						"seconds": "1.5"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 426889948799159,
+					"parameters": {
+						"audio-file": "jump",
+						"loop": "not-looping",
+						"volume": "JumpCount",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 832961467255948
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 857841253835211,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Player",
+					"sid": 532486913057704,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "right"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 228007045362595,
+					"parameters": {
+						"animation": "\"Right\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 860992381768193,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 615133025766841
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 818134178495313,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Player",
+					"sid": 326305804593847,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "left"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 583066905652009,
+					"parameters": {
+						"animation": "\"Right\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 952323069680458,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 946878220222009
 		}
 	],
 	"sid": 482237297620431

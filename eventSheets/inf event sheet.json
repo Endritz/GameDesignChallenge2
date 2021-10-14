@@ -206,46 +206,64 @@
 			],
 			"actions": [
 				{
-					"id": "reset-global-variables",
+					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 145684778837554
+					"sid": 714671844856196,
+					"parameters": {
+						"variable": "MinScrollY",
+						"value": "999"
+					}
 				},
 				{
-					"id": "restart-layout",
+					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 406209700864328
+					"sid": 831839778834851,
+					"parameters": {
+						"variable": "NextPlatform",
+						"value": "0"
+					}
 				},
 				{
 					"id": "destroy",
 					"objectClass": "Player",
-					"sid": 945517757891767
+					"sid": 471086679512452
 				},
 				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 790206470928033,
+					"sid": 133119390266610,
 					"parameters": {
 						"variable": "DeathCount",
 						"value": "1"
 					}
 				},
 				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 852167626245776,
+					"parameters": {
+						"audio-file": "Wilhelm",
+						"loop": "not-looping",
+						"volume": "5",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 892898000296084,
+					"sid": 857029147534130,
 					"parameters": {
 						"variable": "Points",
 						"value": "0"
 					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 406209700864328
 				}
 			],
 			"sid": 454888809506707
-		},
-		{
-			"eventType": "block",
-			"conditions": [],
-			"actions": [],
-			"sid": 213774979601973
 		},
 		{
 			"eventType": "block",
@@ -273,34 +291,43 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-destroyed",
-					"objectClass": "Player",
-					"sid": 847707475785624
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 563046416540179,
+					"parameters": {
+						"value": "DeathCount >0"
+					}
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 961471936721973,
+					"parameters": {
+						"value": "DeathCount % 3 = 0"
+					}
 				}
 			],
 			"actions": [
 				{
 					"id": "open-url-in-new-window",
 					"objectClass": "Browser",
-					"sid": 348855354643735,
+					"sid": 285927392804341,
 					"parameters": {
 						"url": "\"https://raidshadowlegends.com/\"",
 						"tag": "\"NewWindow\""
 					}
 				},
 				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 353878327684353,
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 656616267681671,
 					"parameters": {
-						"audio-file": "Wilhelm",
-						"loop": "not-looping",
-						"volume": "5",
-						"tag-optional": "\"\""
+						"variable": "DeathCount",
+						"value": "0"
 					}
 				}
 			],
-			"sid": 515606917495726
+			"sid": 726416304137018
 		},
 		{
 			"eventType": "block",
@@ -519,11 +546,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 846327214326777,
+					"sid": 194132303274877,
 					"parameters": {
 						"variable": "Points",
 						"comparison": 5,
-						"value": "500"
+						"value": "5000"
 					}
 				}
 			],
