@@ -112,7 +112,8 @@
 			"TitlePage",
 			"Sprite",
 			"LoadingScreen",
-			"SpaceText"
+			"SpaceText",
+			"Wall"
 		],
 		"subfolders": []
 	},

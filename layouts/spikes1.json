@@ -433,12 +433,6 @@
 							"properties": {
 								"enabled": true
 							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
 						}
 					},
 					"world": {
@@ -503,12 +497,6 @@
 							"properties": {
 								"enabled": true
 							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
 						}
 					},
 					"world": {
@@ -543,12 +531,6 @@
 						"Jumpthru": {
 							"properties": {
 								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
 							}
 						}
 					},
@@ -585,12 +567,6 @@
 							"properties": {
 								"enabled": true
 							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
 						}
 					},
 					"world": {
@@ -625,12 +601,6 @@
 						"Jumpthru": {
 							"properties": {
 								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
 							}
 						}
 					},
@@ -667,12 +637,6 @@
 							"properties": {
 								"enabled": true
 							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
 						}
 					},
 					"world": {
@@ -707,12 +671,6 @@
 						"Jumpthru": {
 							"properties": {
 								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
 							}
 						}
 					},
@@ -820,12 +778,6 @@
 							"properties": {
 								"enabled": true
 							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
 						}
 					},
 					"world": {
@@ -860,12 +812,6 @@
 						"Jumpthru": {
 							"properties": {
 								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
 							}
 						}
 					},

@@ -153,6 +153,15 @@
 					"id": "destroy",
 					"objectClass": "Platform",
 					"sid": 277910130966522
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 947375977894284,
+					"parameters": {
+						"variable": "Points",
+						"value": "1"
+					}
 				}
 			],
 			"sid": 830281464409767
@@ -311,6 +320,15 @@
 						"variable": "Points",
 						"value": "Player.Y"
 					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 448387956763825,
+					"parameters": {
+						"variable": "Points",
+						"value": "1"
+					}
 				}
 			],
 			"sid": 180463638289400
@@ -353,6 +371,15 @@
 					"parameters": {
 						"state": "not-mirrored"
 					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 738786125292944,
+					"parameters": {
+						"variable": "Points",
+						"value": "1"
+					}
 				}
 			],
 			"sid": 376285290311673
@@ -394,6 +421,15 @@
 					"sid": 622016301700600,
 					"parameters": {
 						"state": "mirrored"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 901956260864388,
+					"parameters": {
+						"variable": "Points",
+						"value": "1"
 					}
 				}
 			],
@@ -467,6 +503,40 @@
 					"sid": 760089928714438
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 983946442241090,
+					"parameters": {
+						"variable": "Points",
+						"comparison": 0,
+						"value": "500"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 621855194283586,
+					"parameters": {
+						"seconds": "10"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 935598746889708,
+					"parameters": {
+						"layout": "Title Page"
+					}
+				}
+			],
+			"sid": 344642863434356
 		}
 	],
 	"sid": 795276943272977

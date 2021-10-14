@@ -141,12 +141,6 @@
 							"properties": {
 								"enabled": true
 							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
 						}
 					},
 					"world": {
@@ -181,12 +175,6 @@
 						"Jumpthru": {
 							"properties": {
 								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
 							}
 						}
 					},
@@ -223,12 +211,6 @@
 							"properties": {
 								"enabled": true
 							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
 						}
 					},
 					"world": {
@@ -263,12 +245,6 @@
 						"Jumpthru": {
 							"properties": {
 								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
 							}
 						}
 					},
@@ -305,12 +281,6 @@
 							"properties": {
 								"enabled": true
 							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
 						}
 					},
 					"world": {
@@ -345,12 +315,6 @@
 						"Jumpthru": {
 							"properties": {
 								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
 							}
 						}
 					},
@@ -387,12 +351,6 @@
 							"properties": {
 								"enabled": true
 							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": false,
-								"tags": ""
-							}
 						}
 					},
 					"world": {
@@ -427,12 +385,6 @@
 						"Jumpthru": {
 							"properties": {
 								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
 							}
 						}
 					},
@@ -469,12 +421,6 @@
 							"properties": {
 								"enabled": true
 							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
 						}
 					},
 					"world": {
@@ -509,12 +455,6 @@
 						"Jumpthru": {
 							"properties": {
 								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": false,
-								"tags": ""
 							}
 						}
 					},
@@ -551,12 +491,6 @@
 							"properties": {
 								"enabled": true
 							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": false,
-								"tags": ""
-							}
 						}
 					},
 					"world": {
@@ -592,12 +526,6 @@
 							"properties": {
 								"enabled": true
 							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
 						}
 					},
 					"world": {
@@ -632,12 +560,6 @@
 						"Jumpthru": {
 							"properties": {
 								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
 							}
 						}
 					},
@@ -702,12 +624,6 @@
 						"Jumpthru": {
 							"properties": {
 								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
 							}
 						}
 					},
@@ -1034,12 +950,6 @@
 							"properties": {
 								"enabled": true
 							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": false,
-								"tags": ""
-							}
 						}
 					},
 					"world": {
@@ -1074,12 +984,6 @@
 						"Jumpthru": {
 							"properties": {
 								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": false,
-								"tags": ""
 							}
 						}
 					},
