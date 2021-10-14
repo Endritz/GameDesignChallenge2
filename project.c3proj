@@ -47,6 +47,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
@@ -100,7 +108,11 @@
 			"death",
 			"HUD",
 			"Audio",
-			"Coin"
+			"Coin",
+			"TitlePage",
+			"Sprite",
+			"LoadingScreen",
+			"SpaceText"
 		],
 		"subfolders": []
 	},
@@ -116,7 +128,8 @@
 			"Spikes1",
 			"Tutorial3",
 			"Infinite Mode",
-			"Spikes2"
+			"Spikes2",
+			"Title Page"
 		],
 		"subfolders": []
 	},
@@ -126,7 +139,8 @@
 			"Inf Event Sheet",
 			"Spikes Event Sheet",
 			"Tut3 Event sheet",
-			"Spikes2 Event Sheet"
+			"Spikes2 Event Sheet",
+			"Title Page Event Sheet"
 		],
 		"subfolders": []
 	},

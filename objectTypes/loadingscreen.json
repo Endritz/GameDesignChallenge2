@@ -1,0 +1,20 @@
+{
+	"name": "LoadingScreen",
+	"plugin-id": "TiledBg",
+	"sid": 949956343975995,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 859,
+		"height": 420,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 5866955,
+		"useCollisionPoly": true
+	}
+}

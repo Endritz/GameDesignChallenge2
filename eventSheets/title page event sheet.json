@@ -1,0 +1,54 @@
+{
+	"name": "Title Page Event Sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 917355620107383,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "LoadingScreen",
+					"sid": 789343525163677,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 414679716042582
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 905983990821573,
+					"parameters": {
+						"key": 78
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 450520832656050,
+					"parameters": {
+						"layout": "Tutorial"
+					}
+				}
+			],
+			"sid": 110916014467340
+		}
+	],
+	"sid": 154254679821178
+}
